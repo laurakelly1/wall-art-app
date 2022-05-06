@@ -18,9 +18,3 @@ https://trello.com/b/OewotNZE/wip
 
 <h2>API</h2>
 https://api.artic.edu/docs/#introduction 
-
-<style>
-.rotate {
-transform: rotate(90deg);
-}
-</style>
