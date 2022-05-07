@@ -14,7 +14,7 @@ Optional features to include in this iteration or another:
 https://trello.com/b/OewotNZE/wip 
 
 <h2>Wireframe</h2>
-<img src="https://github.com/laurakelly1/wall-art-app/blob/main/images/IMG_1534.jpg" height="400" rotate="90" class="rotate">
+<img src="https://github.com/laurakelly1/wall-art-app/blob/main/images/IMG_1534.jpg" height="400">
 
 <h2>API</h2>
 https://api.artic.edu/docs/#introduction 
