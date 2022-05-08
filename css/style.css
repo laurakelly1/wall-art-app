@@ -1,3 +1,83 @@
+/* PAGE STRUCTURE */
+
 body {
-    background-color: #5B84B1FF;
+  background-color: #5b84b1ff;
+  display: flex;
+  align-content: center;
+  gap: 10px;
+}
+
+div.display {
+  display: flex;
+  flex-flow: column wrap;
+  min-width: 65vw;
+}
+
+header {
+  border: solid salmon;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  border: solid salmon;
+}
+
+div.side-heading {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  min-width: 30vw;
+  margin: 5px;
+}
+
+.textBox {
+  background-color: white;
+  width: 75%;
+  border: 2px solid black;
+}
+
+.submitButton {
+  background-color: white;
+  width: 20%;
+  border: 2px solid black;
+}
+
+.side {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  min-width: 30vw;
+  border: solid salmon;
+}
+
+.searchResults {
+    display: flex;
+    flex-direction: row;
+    border: solid green;
+}
+
+.text {
+    border: solid green;
+    
+}
+
+.image {
+    border: solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    
+}
+/* ELEMENT STYLING */
+
+.title {
+  font-weight: bold;
+  /* border: solid salmon; */
+}
+
+.artist {
+  /* border: solid salmon; */
 }

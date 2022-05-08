@@ -12,26 +12,32 @@
 </head>
 
 <body>
-    <header>
-        <h1>Wall Art</h1>
-    </header>
-    <main>
-        <h2>Your room</h2>
-        <div class="room"></div>
-        <div class="artSpace"></div>
-    </main>
-    <side>
-        <h2>Find art</h2>
-        <form>
-            <input type="text" placeholder="Search for your art">
-            <input type="submit" value="Search">
-        </form>
-        <p class="title"></p>
-        <p class="artist"></p>
-        <p class="type"></p>
-        <p class="year"></p>
-        <p class="artImg"></p>
-    </side>
+    <div class="display">
+        <header>
+            <h1>Wall Art</h1>
+        </header>
+        <main>
+            <h2>Your room</h2>
+            <div class="room"></div>
+            <div class="artSpace"></div>
+        </main>
+    </div>
+
+    <div class="side">
+        <div class="side-heading">
+            <h2>Find art</h2>
+            <form>
+                <input class="textBox" type="text" placeholder="Search for your art">
+                <input class="submitButton" type="submit" value="Search">
+            </form>
+        </div>
+        <div class="searchResults">
+            <div class="text">
+            </div>
+            <div class="image">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
