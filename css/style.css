@@ -1,7 +1,7 @@
 /* PAGE STRUCTURE */
 
 body {
-  background-color: #5b84b1ff;
+  background-color: #5B84B1FF;
   display: flex;
   align-content: center;
   gap: 10px;
@@ -20,7 +20,7 @@ header {
 .main {
   display: flex;
   flex-flow: column wrap;
-  align-content: center;
+  align-items: center;
   border: solid salmon;
 }
 
@@ -76,10 +76,69 @@ div.side-heading {
 
 /* ROOM */
 
-.border {
-  
-  background-color: rgb(110, 144, 110);
-  width: 60%;
-  height: 30%;
-  top: 10%;
+
+.room {
+  display: flex;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  width: 60vw;
+  height: 35vh;
+  border: 15px solid rgb(190, 228, 190);
+  border-radius: 30px;
+  margin: 10px;
+ }
+
+.floor {
+  position: relative;
+  top: 75%;
+  background-color: rgb(147, 94, 45);
+  height: 20%;
+  width: 100%;
+  margin: 10px;
+  border-radius: 0 0 30px 30px;
 }
+
+.lamp-pole {
+  position: relative;
+  top: -130%;
+  left: 85%;
+  background-color: black;
+  height: 10vh;
+  width: 1%;
+}
+
+.lamp-base {
+  position: relative;
+  top: 15%;
+  left: 82%;
+  background-color: black;
+  height: 10px;
+  width: 4vw;
+  border-radius: 50px;
+}
+
+.lamp-top {
+  position: relative;
+  top: -300%;
+  left: 81%;
+  background-color: rgb(120, 119, 119);
+  height: 4vh;
+  width: 9%;
+  border-radius: 2px;
+}
+
+.artAPI {
+  position: relative;
+  top: -500px;
+  left: 28%;
+  height: 150px;
+  width: 300px;
+  border: 5px solid black;
+}
+
+/* <!-- artwork -->
+<div class="artBorder">
+    <div class="artMatte">
+        <div class="artAPI"></div>
+    </div>
+</div> */
