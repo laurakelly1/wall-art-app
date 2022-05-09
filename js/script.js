@@ -8,7 +8,7 @@ const search = "search?q=";
 const publicDomain = "&query[term][is_public_domain]=true";
 
 const imageURL = "https://www.artic.edu/iiif/2/";
-const imageSize = "/full/100,/0/default.jpg";
+const imageSize = "/full/110,/0/default.jpg";
 
 // ELEMENTS
 const $title = $(".title"); // 'title'
@@ -29,31 +29,34 @@ $form.on("submit", handleGetData);
 function handleGetData(event) {
   event.preventDefault();
   const userInput = $input.val();
-  console.log(dataURL + search + userInput + publicDomain)
+  console.log(dataURL + search + userInput + publicDomain);
   $.ajax(dataURL + search + userInput + publicDomain).then(
     function (artSearch) {
       // The art object has an object called data inside it where all the info is kept.
       // data is an array of objects
       artSearch.data.forEach(function (artItem) {
         $.ajax(dataURL + artItem.id).then(function (artPiece) {
-          $(".text").append(`<p class="title">${artPiece.data.title}<br></p>`);
-          $(".text").append(
-            `<p class="artist">Artist: ${artPiece.data.artist_titles}<br></p>`
-          );
-          $(".text").append(
-            `<p class="type">Type: ${artPiece.data.classification_titles}<br></p>`
-          );
-          $(".text").append(
-            `<p class="year">Year: ${artPiece.data.date_start}<br><br></p>`
-          );
-console.log(artPiece.data.image_id)
-          $(".image").append(
+          $(".info").append(
             `<img src="${
               imageURL + artPiece.data.image_id + imageSize
-            }"class="artImage"></img>`
+            }"class="image"></img>`
           );
+          $(".info").append(`<p class="text title">${artPiece.data.title}<br></p>`);
+          
+          $(".info").append(
+            `<p class="text artist">Artist: ${artPiece.data.artist_titles}<br></p>`
+          );
+          $(".info").append(
+            `<p class="text type">Type: ${artPiece.data.classification_titles}<br></p>`
+          );
+          // Write code that puts a space between each item
+          $(".info").append(
+            `<p class="text year">Year: ${artPiece.data.date_start}<br><br></p>`
+          );
+
           // write code for if artwork has the same title, don't show
           // Write code for if there is not data for each item, don't display the line at all. returns null.
+          // Write code for if, there is no artwork, don't show anything
         });
       });
     },

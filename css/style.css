@@ -24,24 +24,25 @@ main {
   border: solid salmon;
 }
 
+/* FIND ART BAR */
+
 div.side-heading {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
   min-width: 30vw;
   margin: 5px;
+  border: solid salmon;
 }
 
 .textBox {
   background-color: white;
   width: 75%;
-  border: 2px solid black;
 }
 
 .submitButton {
   background-color: white;
   width: 20%;
-  border: 2px solid black;
 }
 
 .side {
@@ -53,31 +54,28 @@ div.side-heading {
 }
 
 .searchResults {
-    display: flex;
-    flex-direction: row;
-    border: solid green;
+  display: flex;
+  flex-direction: row;
 }
 
-.text {
-    border: solid green;
-    
+.result {
+  display: flex;
+  flex-direction: column;
 }
 
-.image {
-    border: solid green;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: space-around;
-    
+.data {
+  display: flex;
+  flex-direction: row;
 }
-/* ELEMENT STYLING */
+
 
 .title {
   font-weight: bold;
-  /* border: solid salmon; */
 }
 
-.artist {
-  /* border: solid salmon; */
-}
+
+/* Add media query to have search results go beneath Your room in smaller views. */
+
+/* ROOM */
+
+
