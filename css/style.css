@@ -63,9 +63,16 @@ div.side-heading {
   flex-direction: column;
 }
 
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .data {
   display: flex;
   flex-direction: row;
+  gap: 10px;
 }
 
 .title {
@@ -127,18 +134,11 @@ div.side-heading {
   border-radius: 2px;
 }
 
-.artAPI {
+.artBorder {
   position: relative;
-  top: -500px;
+  top: -500%;
   left: 28%;
-  height: 150px;
-  width: 300px;
+  height: 8vh;
+  width: 20vw;
   border: 5px solid black;
 }
-
-/* <!-- artwork -->
-<div class="artBorder">
-    <div class="artMatte">
-        <div class="artAPI"></div>
-    </div>
-</div> */

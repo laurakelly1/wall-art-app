@@ -15,14 +15,16 @@ const $title = $(".title"); // 'title'
 const $artist = $(".artist"); // 'artist_titles'
 const $type = $(".type"); // "classification_titles"
 const $year = $(".year"); // 'date_start"
-const $artImg = $(".artImg");
 
 const $form = $("form");
 const $input = $('input[type="text"]');
 
+const $loadImage = $(".image");
+
 // EVENT LISTENERS
 
 $form.on("submit", handleGetData);
+$loadImage.on("click", showImage);
 
 // FUNCTIONS
 
@@ -36,13 +38,15 @@ function handleGetData(event) {
       // data is an array of objects
       artSearch.data.forEach(function (artItem) {
         $.ajax(dataURL + artItem.id).then(function (artPiece) {
-          $(".info").append(
+          $(".image").append(
             `<img src="${
               imageURL + artPiece.data.image_id + imageSize
             }"class="image"></img>`
           );
-          $(".info").append(`<p class="text title">${artPiece.data.title}<br></p>`);
-          
+          $(".info").append(
+            `<p class="text title">${artPiece.data.title}<br></p>`
+          );
+
           $(".info").append(
             `<p class="text artist">Artist: ${artPiece.data.artist_titles}<br></p>`
           );
@@ -68,4 +72,9 @@ function handleGetData(event) {
   );
 }
 
-// function handleGetImage() {}
+function showImage(event) {
+  console.log(event);
+  $(".artAPI").empty();
+  const newImage = event.target;
+  $(".artAPI").append(newImage);
+}
