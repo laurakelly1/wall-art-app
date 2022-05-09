@@ -17,7 +17,7 @@ header {
   border: solid salmon;
 }
 
-main {
+.main {
   display: flex;
   flex-flow: column wrap;
   align-content: center;
@@ -68,14 +68,18 @@ div.side-heading {
   flex-direction: row;
 }
 
-
 .title {
   font-weight: bold;
 }
-
 
 /* Add media query to have search results go beneath Your room in smaller views. */
 
 /* ROOM */
 
-
+.border {
+  
+  background-color: rgb(110, 144, 110);
+  width: 60%;
+  height: 30%;
+  top: 10%;
+}
