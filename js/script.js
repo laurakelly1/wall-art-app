@@ -31,18 +31,21 @@ $loadImage.on("click", showImage);
 function handleGetData(event) {
   event.preventDefault();
   const userInput = $input.val();
-  console.log(dataURL + search + userInput + publicDomain);
   $.ajax(dataURL + search + userInput + publicDomain).then(
     function (artSearch) {
       // The art object has an object called data inside it where all the info is kept.
       // data is an array of objects
       artSearch.data.forEach(function (artItem) {
         $.ajax(dataURL + artItem.id).then(function (artPiece) {
+          if (artPiece.data.image_id == "null") {
+            console.log(artPiece.data.image_id);
+          }
           $(".image").append(
             `<img src="${
               imageURL + artPiece.data.image_id + imageSize
             }"class="image"></img>`
           );
+
           $(".info").append(
             `<p class="text title">${artPiece.data.title}<br></p>`
           );
