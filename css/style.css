@@ -1,10 +1,11 @@
 /* PAGE STRUCTURE */
 
 body {
-  background-color: #5B84B1FF;
+  background-color: #e6ddde;
   display: flex;
   align-content: center;
   gap: 10px;
+  font-family: 'Libre Baskerville', serif;
 }
 
 div.display {
@@ -14,14 +15,15 @@ div.display {
 }
 
 header {
-  border: solid salmon;
+  display: flex;
+  justify-content: center;
 }
 
 .main {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  border: solid salmon;
+  
 }
 
 /* FIND ART BAR */
@@ -32,17 +34,20 @@ div.side-heading {
   justify-content: flex-end;
   min-width: 30vw;
   margin: 5px;
-  border: solid salmon;
+  
 }
 
 .textBox {
   background-color: white;
   width: 75%;
+  border: 2px solid #443235;
 }
 
 .submitButton {
   background-color: white;
   width: 20%;
+  border: 2px solid #443235;
+  color: #443235;
 }
 
 .side {
@@ -50,7 +55,7 @@ div.side-heading {
   flex-flow: column wrap;
   align-items: flex-start;
   min-width: 30vw;
-  border: solid salmon;
+  
 }
 
 .searchResults {
@@ -90,7 +95,7 @@ div.side-heading {
   background-color: rgb(255, 255, 255);
   width: 60vw;
   height: 35vh;
-  border: 15px solid rgb(190, 228, 190);
+  border: 15px solid #443235;
   border-radius: 30px;
   margin: 10px;
  }
