@@ -14,8 +14,14 @@ body {
     flex-flow: row wrap;
     margin: 0 auto;
   }
-    
+  form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 30px;
+  }
 }
+
 div.display {
   display: flex;
   flex-flow: column wrap;
@@ -43,12 +49,14 @@ h1 {
 
 a {
   color: #06193e;
+  margin: 0 0 20px 0;
 }
 .main {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
 }
+
 
 
 /* FIND ART BAR */
@@ -61,10 +69,16 @@ div.side-heading {
   margin: 5px;
   font-size: 150%;
 }
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 28px;
+}
 
 .textBox {
   background-color: white;
-  width: 75%;
+  width: 70%;
   border: 2px solid #08255b;
   font-size: 60%;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
@@ -72,7 +86,7 @@ div.side-heading {
 
 .submitButton {
   background-color: white;
-  width: 30%;
+  width: 25%;
   border: 2px solid #08255b;
   color: #08255b;
   font-size: 60%;
@@ -83,7 +97,7 @@ div.side-heading {
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
-  min-width: 30vw;
+  min-width: 33vw;
 }
 
 .searchResults {
@@ -119,8 +133,6 @@ div.side-heading {
   color: #08255b;
 }
 
-/* Add media query to have search results go beneath Your room in smaller views. */
-
 /* ROOM */
 
 .room {
@@ -148,20 +160,17 @@ div.side-heading {
   left: -50%;
   top: 10%;
   height: 30%;
-  width: 400%;
+  min-width: 30%;
   border: 10px solid black;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
-
-
 }
 
 .artAPI {
   display: flex;
   position: relative;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  
- 
-  
+  width: 100%;
 }

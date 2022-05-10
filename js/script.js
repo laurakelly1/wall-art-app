@@ -1,7 +1,3 @@
-// console.log($.ajax("https://api.artic.edu/api/v1/artworks/129884"));
-// Changes to www instead of api at start
-// https://www.artic.edu/iiif/2/1adf2696-8489-499b-cad2-821d7fde4b33/full/843,/0/default.jpg
-
 // VARIABLES
 const dataURL = "https://api.artic.edu/api/v1/artworks/";
 const search = "search?q=";
@@ -19,17 +15,19 @@ const $year = $(".year"); // 'date_start"
 const $form = $("form");
 const $input = $('input[type="text"]');
 
-const $loadImage = $(".image");
+const $loadImage = $(".image, .imageItem");
 
 // EVENT LISTENERS
 
 $form.on("submit", handleGetData);
-$loadImage.on("click", showImage);
+$loadImage.on("click", ".imageItem", showImage);
 
 // FUNCTIONS
 
 function handleGetData(event) {
   event.preventDefault();
+  $(".info").empty();
+  $(".image").empty();
   const userInput = $input.val();
   $.ajax(dataURL + search + userInput + publicDomain).then(
     function (artSearch) {
@@ -79,5 +77,6 @@ function showImage(event) {
    $(".artAPI").empty();
   const $newImage = event.target.cloneNode(true);
   $(".artAPI").append($newImage);
+  console.log($newImage);
 // Add fade out and fade in.
 }
