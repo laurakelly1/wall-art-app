@@ -8,7 +8,7 @@ const search = "search?q=";
 const publicDomain = "&query[term][is_public_domain]=true";
 
 const imageURL = "https://www.artic.edu/iiif/2/";
-const imageSize = "/full/110,/0/default.jpg";
+const imageSize = "/full/800,/0/default.jpg";
 
 // ELEMENTS
 const $title = $(".title"); // 'title'
@@ -43,7 +43,7 @@ function handleGetData(event) {
           $(".image").append(
             `<img src="${
               imageURL + artPiece.data.image_id + imageSize
-            }"class="image"></img>`
+            }"class="imageItem"></img>`
           );
 
           $(".info").append(
@@ -76,8 +76,8 @@ function handleGetData(event) {
 }
 
 function showImage(event) {
-  console.log(event);
-  $(".artAPI").empty();
-  const newImage = event.target;
-  $(".artAPI").append(newImage);
+   $(".artAPI").empty();
+  const $newImage = event.target.cloneNode(true);
+  $(".artAPI").append($newImage);
+// Add fade out and fade in.
 }

@@ -5,14 +5,23 @@ body {
   display: flex;
   align-content: center;
   gap: 10px;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+  }
+  
+}
 div.display {
   display: flex;
   flex-flow: column wrap;
   min-width: 65vw;
 }
+
 
 header {
   display: flex;
@@ -28,8 +37,8 @@ h1 {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  
 }
+
 
 /* FIND ART BAR */
 
@@ -40,22 +49,23 @@ div.side-heading {
   min-width: 30vw;
   margin: 5px;
   font-size: 150%;
-  
 }
 
 .textBox {
   background-color: white;
   width: 75%;
   border: 2px solid #443235;
-  font-size: large;
+  font-size: 60%;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
 }
 
 .submitButton {
   background-color: white;
-  width: 20%;
+  width: 30%;
   border: 2px solid #443235;
   color: #443235;
-  font-size: large;
+  font-size: 60%;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
 }
 
 .side {
@@ -63,12 +73,12 @@ div.side-heading {
   flex-flow: column wrap;
   align-items: flex-start;
   min-width: 30vw;
-  
 }
 
 .searchResults {
   display: flex;
   flex-direction: row;
+  padding: 4px;
 }
 
 .result {
@@ -80,6 +90,11 @@ div.side-heading {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.imageItem {
+  height: auto;
+  width: 110px;
 }
 
 .data {
@@ -97,25 +112,45 @@ div.side-heading {
 
 /* ROOM */
 
-
 .room {
   display: flex;
-  position: relative;
   background-color: rgb(255, 255, 255);
-  width: 60vw;
-  height: 35vh;
-  border: 15px solid #443235;
-  border-radius: 30px;
-  margin: 10px;
- }
-
-
-.artBorder {
-  position: relative;
-  top: -500%;
-  left: 28%;
-  height: 8vh;
-  width: 20vw;
-  border: 5px solid black; 
+  width: 90%;
+  height: auto;
+  border: 20px solid #443235;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
 }
 
+.roomBackground {
+  display: flex;
+  position: relative;
+  width: 101%;
+  height: auto;
+  left: -0.25%;
+}
+
+.artBorder {
+  display: flex;
+  position: relative;
+  left: -50%;
+  top: 10%;
+  height: 30%;
+  width: 400%;
+  border: 10px solid black;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
+
+
+}
+
+.artAPI {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  
+ 
+  
+}
