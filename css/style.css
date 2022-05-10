@@ -1,7 +1,7 @@
 /* PAGE STRUCTURE */
 
 body {
-  background-color: #e6ddde;
+  background-color: #8AAAE5;
   display: flex;
   align-content: center;
   gap: 10px;
@@ -14,7 +14,7 @@ body {
     flex-flow: row wrap;
     margin: 0 auto;
   }
-  
+    
 }
 div.display {
   display: flex;
@@ -25,14 +25,25 @@ div.display {
 
 header {
   display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   justify-content: center;
 }
 
 h1 {
   color: white;
   font-size: 600%;
+  margin: 30px auto 0px auto; 
 }
 
+.subtitle {
+  color: #08255b;
+  font-size: 150%;
+}
+
+a {
+  color: #06193e;
+}
 .main {
   display: flex;
   flex-flow: column wrap;
@@ -54,7 +65,7 @@ div.side-heading {
 .textBox {
   background-color: white;
   width: 75%;
-  border: 2px solid #443235;
+  border: 2px solid #08255b;
   font-size: 60%;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
 }
@@ -62,8 +73,8 @@ div.side-heading {
 .submitButton {
   background-color: white;
   width: 30%;
-  border: 2px solid #443235;
-  color: #443235;
+  border: 2px solid #08255b;
+  color: #08255b;
   font-size: 60%;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
 }
@@ -105,7 +116,7 @@ div.side-heading {
 
 .title {
   font-weight: 800;
-  color: #443235;
+  color: #08255b;
 }
 
 /* Add media query to have search results go beneath Your room in smaller views. */
@@ -117,7 +128,7 @@ div.side-heading {
   background-color: rgb(255, 255, 255);
   width: 90%;
   height: auto;
-  border: 20px solid #443235;
+  border: 20px solid #08255b;
   border-radius: 10px;
   margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
