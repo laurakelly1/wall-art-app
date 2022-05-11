@@ -30,6 +30,7 @@ function handleGetData(event) {
   $(".image").empty();
   const userInput = $input.val();
   $.ajax(dataURL + search + userInput + publicDomain).then(
+    // Limit the amount of results here.
     function (artSearch) {
       // The art object has an object called data inside it where all the info is kept.
       // data is an array of objects
