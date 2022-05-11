@@ -4,7 +4,7 @@ const search = "search?q=";
 const publicDomain = "&query[term][is_public_domain]=true";
 
 const imageURL = "https://www.artic.edu/iiif/2/";
-const imageSize = "/full/800,/0/default.jpg";
+const imageSize = "/full/200,/0/default.jpg";
 
 // ELEMENTS
 const $title = $(".title"); // 'title'
@@ -25,8 +25,7 @@ $loadImage.on("click", ".imageItem", showImage);
 // FUNCTIONS
 
 function handleGetData(event) {
-
-  // Prevent default and clear past results.
+  // Prevents default and clear past results.
   event.preventDefault();
   $(".info").empty();
   $(".image").empty();
@@ -34,20 +33,24 @@ function handleGetData(event) {
   // Take user input and put it into the API
   const userInput = $input.val();
   $.ajax(dataURL + search + userInput + publicDomain).then(
-
-    // Limit the amount of results here.
-
+   
     // Searches for individual art items from results of user search.
     function (artSearch) {
 
-      // The art object has an object called data inside it where all the info is kept.
-      // data is an array of objects
       artSearch.data.forEach(function (artItem) {
         $.ajax(dataURL + artItem.id).then(function (artPiece) {
 
-          // Don't show artPiece if it doesn't have all the details.
-          if (artPiece.data.image_id == "null") {
-            console.log(artPiece.data.image_id);
+          // Conditions of poor results.
+          if (artPiece.data.image_id == null) return true;
+          if (artPiece.data.title == "") return true;
+          if (artPiece.data.artist_titles == "") {
+            artPiece.data.artist_titles = "N/A"
+          }
+          if (artPiece.data.classification_titles == "") {
+            artPiece.data.classification_titles = "N/A"
+          }
+          if (artPiece.data.date_start == "") {
+            artPiece.data.date_start = "N/A"
           }
 
           // Get image from API
@@ -65,16 +68,16 @@ function handleGetData(event) {
             `<p class="text artist">Artist: ${artPiece.data.artist_titles}<br></p>`
           );
           $(".info").append(
-            `<p class="text type">Type: ${artPiece.data.classification_titles}<br></p>`
+            `<p class="text type">Type: ${artPiece.data.classification_titles.join(
+              ", "
+            )}<br></p>`
           );
           $(".info").append(
             `<p class="text year">Year: ${artPiece.data.date_start}<br><br></p>`
           );
 
-          
           // write code for if artwork has the same title, don't show
           // Write code for if there is not data for each item, don't display the line at all. returns null.
-          // Write code for if, there is no artwork, don't show anything REMOVE, or map and then filter.
           // if (artist.title doesn't exist) return null.
           //
           // limit search results to 10 pagenation. throttle. debounce.
@@ -99,7 +102,7 @@ function showImage(event) {
 
   // Adds CSS for artwork display and puts it in the frame.
   newImage.classList.add("artAPI");
-   $(".artAPI").append(newImage);
-   
+  $(".artAPI").append(newImage);
+
   // Add fade out and fade in.
 }
