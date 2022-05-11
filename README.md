@@ -1,4 +1,4 @@
-<h1> Still Wall </h1>
+/Users/laurakelly/GA/project1/wall-art-app/images/websiteHeading.png
 There are currently no artworks hanging in my home! Along with the finacial commitment issues I have, I struggled to imagine the chosen artwork bring my living room alive. Enter: Still Wall.
 
 This website allows users to search through the Chicago Institute of Art’s database and see their chosen image displayed on a mockup of a wall at home. It makes the imagining easy!
@@ -31,7 +31,7 @@ https://trello.com/b/OewotNZE/wip
 
 
 <h2>API</h2>
-The Chicago Insitute of Art
+The Chicago Insitute of Art'
 https://api.artic.edu/docs/#introduction 
 
 
