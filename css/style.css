@@ -1,7 +1,7 @@
 /* PAGE STRUCTURE */
 
 body {
-  background-color: #8AAAE5;
+  background-color: #8aaae5;
   display: flex;
   align-content: center;
   gap: 10px;
@@ -28,7 +28,6 @@ div.display {
   min-width: 65vw;
 }
 
-
 header {
   display: flex;
   flex-flow: column wrap;
@@ -39,7 +38,7 @@ header {
 h1 {
   color: white;
   font-size: 600%;
-  margin: 30px auto 0px auto; 
+  margin: 30px auto 0px auto;
 }
 
 .subtitle {
@@ -57,8 +56,6 @@ a {
   align-items: center;
 }
 
-
-
 /* FIND ART BAR */
 
 div.side-heading {
@@ -69,6 +66,11 @@ div.side-heading {
   margin: 5px;
   font-size: 150%;
 }
+
+.side-title {
+  color: #08255b;
+}
+
 form {
   display: flex;
   flex-direction: row;
@@ -80,14 +82,16 @@ form {
   background-color: white;
   width: 70%;
   border: 2px solid #08255b;
+  border-radius: 5px;
   font-size: 60%;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
-}
+  }
 
 .submitButton {
   background-color: white;
   width: 25%;
   border: 2px solid #08255b;
+  border-radius: 5px;
   color: #08255b;
   font-size: 60%;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
@@ -119,13 +123,14 @@ form {
 
 .imageItem {
   height: auto;
-  width: 110px;
+  width: 100%;
 }
 
 .data {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  border:3px solid #06193e;
 }
 
 .title {
@@ -157,13 +162,15 @@ form {
 .artBorder {
   display: flex;
   position: relative;
+  height: auto;
   left: -50%;
   top: 10%;
-  height: 30%;
+  max-height: 30%;
   min-width: 30%;
   border: 10px solid black;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
+  /* stretch with images that are too long */
 }
 
 .artAPI {
@@ -172,5 +179,6 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-}
+  margin: 3%;
+  height: auto;
+ }

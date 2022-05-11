@@ -61,7 +61,10 @@ function handleGetData(event) {
 
           // write code for if artwork has the same title, don't show
           // Write code for if there is not data for each item, don't display the line at all. returns null.
-          // Write code for if, there is no artwork, don't show anything
+          // Write code for if, there is no artwork, don't show anything REMOVE, or map and then filter.
+          // if (artist.title doesn't exist) return null.
+          // 
+        // limit search results to 10 pagenation. throttle. debounce.
         });
       });
     },
