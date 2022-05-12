@@ -55,10 +55,16 @@ h1 {
   font-size: 150%;
 }
 
-a {
+.API {
   color: #06193e;
   margin: 0 0 20px 0;
+  text-decoration: none;
 }
+
+.APT:hover {
+  text-decoration: underline;
+}
+
 .main {
   display: flex;
   flex-flow: column wrap;
@@ -74,7 +80,7 @@ a {
   flex-flow: column wrap;
   justify-content: flex-end;
   min-width: 30vw;
-  margin: 5px;
+  margin: 100px 5px 5px 5px ;
 }
 
 .sideTitle {
@@ -96,22 +102,23 @@ form {
 }
 
 .textBox {
-  background-color: white;
+  background-color:#8aaae5;
+   
   width: 70%;
-  border: 2px solid #08255b;
+  border: 4px solid #08255b;
   border-radius: 5px;
   font-size: 60%;
-  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19); */
 }
 
 .submitButton {
-  background-color: white;
+  background-color:#8aaae5;
   width: 25%;
-  border: 2px solid #08255b;
+  border: 4px solid #08255b;
   border-radius: 5px;
   color: #08255b;
   font-size: 60%;
-  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19); */
 }
 
 .side {
