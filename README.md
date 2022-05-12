@@ -13,7 +13,7 @@ This website allows users to search through the Art Institute of Chicago's datab
 <li>JavaScript</li>
 <li>jQuery</li>
 <li>Google Fonts</li>
-<li>Chicago Institute of Art</li>
+<li>Art Institute of Chicago</li>
 <li>Font Awesome</li>
 </ul>
 
