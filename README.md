@@ -36,7 +36,6 @@ All work and ideas tracked on Trello.
 <a href="https://trello.com/b/OewotNZE/wip">Click here</a> to see the work in progress!
 
 <h2>API</h2>
-<br>
 All documentation regarding the Art Institute of Chicago's API that was used in the development of this website can be found <a href="https://api.artic.edu/docs/#introduction">here!</a>
 
 <h2>Image sources</h2>
