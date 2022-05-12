@@ -19,9 +19,7 @@ This website allows users to search through the Chicago Institute of Art’s dat
 <img src="https://github.com/laurakelly1/wall-art-app/blob/main/images/screenshot.jpg"/>
 
 <h2> Getting Started</h2>
-Click below to see your favourite pieces from the Chicago Institude of Art presented on your living room wall!
-<br>
-https://laurakelly1.github.io/wall-art-app/
+<a href="https://laurakelly1.github.io/wall-art-app/">Click here</a>to see your favourite pieces from the Chicago Institude of Art presented on your living room wall!
 
 <h2>Future Enhancements</h2>
 <li>Allow user to pick the room (bathroom, kitchen etc.) </li>
@@ -31,16 +29,12 @@ https://laurakelly1.github.io/wall-art-app/
 
 <h2>Trello board </h2>
 All work and ideas tracked on Trello. 
-Click below to see the work in progress!
-<br>
-https://trello.com/b/OewotNZE/wip 
-
+<a href="https://trello.com/b/OewotNZE/wip">Click here</a> to see the work in progress!
 
 <h2>API</h2>
-The Chicago Insitute of Art'
+The Chicago Insitute of Art
 <br>
-https://api.artic.edu/docs/#introduction 
-
+All documentation regard the API used for this project can be found <a href="https://api.artic.edu/docs/#introduction">here!</a>
 
 <h2>Image sources</h2>
-All images sources from: https://unsplash.com
+Room image sourced from: https://unsplash.com
