@@ -40,6 +40,7 @@ function handleGetData(event) {
     function (artSearch) {
       artSearch.data.forEach(function (artItem) {
         $.ajax(dataURL + artItem.id).then(function (artPiece) {
+          
           // Conditions of poor results.
           if (artPiece.data.image_id == null) return true;
           if (artPiece.data.title == "") return true;
@@ -65,7 +66,8 @@ function handleGetData(event) {
             `<p class="text title">${artPiece.data.title}<br></p>`
           );
           $(".info").append(
-            `<p class="text artist">Artist: ${artPiece.data.artist_titles}<br></p>`
+            `<p class="text artist">Artist: ${artPiece.data.artist_titles.join(
+              ", ")}<br></p>`
           );
           $(".info").append(
             `<p class="text type">Type: ${artPiece.data.classification_titles.join(
