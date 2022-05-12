@@ -23,7 +23,7 @@ This website allows users to search through the Art Institute of Chicago's datab
 </p>
 
 <h2> Getting Started</h2>
-<a href="https://laurakelly1.github.io/wall-art-app/">Click here</a> to see your favourite pieces from the Art Institute of Chicago presented on your living room wall!
+<a href="https://laurakelly1.github.io/wall-art-app/" target="_blank">Click here</a> to see your favourite pieces from the Art Institute of Chicago presented on your living room wall!
 
 <h2>Future Enhancements</h2>
 <li>Allow user to pick the room (bathroom, kitchen etc.) </li>
@@ -33,10 +33,10 @@ This website allows users to search through the Art Institute of Chicago's datab
 
 <h2>Trello board </h2>
 All work and ideas tracked on Trello. 
-<a href="https://trello.com/b/OewotNZE/wip">Click here</a> to see the work in progress!
+<a href="https://trello.com/b/OewotNZE/wip" target="_blank">Click here</a> to see the work in progress!
 
 <h2>API</h2>
-All documentation regarding the Art Institute of Chicago's API that was used in the development of this website can be found <a href="https://api.artic.edu/docs/#introduction">here!</a>
+All documentation regarding the Art Institute of Chicago's API that was used in the development of this website can be found <a href="https://api.artic.edu/docs/#introduction" target="_blank">here!</a>
 
 <h2>Image sources</h2>
 Room image sourced from: https://unsplash.com
