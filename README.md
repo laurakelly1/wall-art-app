@@ -1,4 +1,6 @@
+<p align="center">
 <img src="https://github.com/laurakelly1/wall-art-app/blob/main/images/websiteHeading.png" />
+</p>
 There are currently no artworks hanging in my home! Along with the financial commitment issues I have, I struggled to imagine the chosen artwork bringing my living room alive. Enter: Still Wall.
 <br>
 <br>
@@ -16,7 +18,9 @@ This website allows users to search through the Chicago Institute of Art’s dat
 </ul>
 
 <h2>Screenshots</h2>
+<p align="center">
 <img src="https://github.com/laurakelly1/wall-art-app/blob/main/images/screenshot.jpg"/>
+</p>
 
 <h2> Getting Started</h2>
 <a href="https://laurakelly1.github.io/wall-art-app/">Click here</a> to see your favourite pieces from the Chicago Institude of Art presented on your living room wall!
