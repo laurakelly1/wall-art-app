@@ -255,7 +255,7 @@ h5 {
   .mainView {
     display: flex;
     flex-flow: row wrap;
-    margin: 2vw;
+    margin: 10vw;
     width: 80vw;
     /* flex-grow: 1; */
   }
