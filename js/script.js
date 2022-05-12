@@ -57,7 +57,7 @@ function handleGetData(event) {
           $(".info").append(
             `<img src="${
               imageURL + artPiece.data.image_id + imageSize
-            }"class="imageItem grow"></img>`
+            }"class="imageItem growImage"></img>`
           );
 
           // Get info from API
@@ -92,13 +92,14 @@ function showImage(event) {
 
   // Clones and removes css form original
   const newImage = event.target.cloneNode(true);
-  newImage.classList.remove("imageItem", "grow");
+  newImage.classList.remove("imageItem", "growImage");
 
   // Adds CSS for artwork display and puts it in the frame.
   newImage.classList.add("artAPI");
 
   $(".artAPI").append($(newImage).hide().fadeIn(500));
 }
+
 
 function searchBar() {
   $(".textBox").toggleClass("textBoxLong");
