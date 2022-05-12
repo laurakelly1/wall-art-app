@@ -15,21 +15,6 @@ body {
   gap: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  .mainView {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0 auto;
-    flex-grow: 1;
-  }
-  form {
-    display: flex;
-    flex-direction: row;
-    gap: 1%;
-    font-size: 30px;
-  }
-}
-
 div.display {
   display: flex;
   flex-flow: column wrap;
@@ -75,12 +60,19 @@ h1 {
 
 /* HEADING OF FIND ART BAR */
 
+.side {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  width: 33vw;
+}
+
 .sideHeading {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
   min-width: 30vw;
-  margin: 100px 5px 5px 5px ;
+  margin: 100px 5px 5px 5px;
 }
 
 .sideTitle {
@@ -95,44 +87,55 @@ h1 {
 form {
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  font-size: 28px;
+  align-items: center;
+  height: 50px;
+  width: 90%;
   padding-bottom: 15px;
-  border-bottom: 1px solid #06193e;
 }
 
 .textBox {
-  background-color:#8aaae5;
-   
-  width: 70%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: none;
   border: 4px solid #08255b;
-  border-radius: 5px;
-  font-size: 60%;
-  /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19); */
-}
-
-.submitButton {
-  background-color:#8aaae5;
-  width: 25%;
-  border: 4px solid #08255b;
-  border-radius: 5px;
   color: #08255b;
-  font-size: 60%;
-  /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19); */
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
+  transition: width 0.5s ease-in-out, border-radius 0.8s ease-in-out;
 }
 
-.side {
+.textBoxLong {
+  width: 100%;
+  height: 50px;
+  border: 4px solid #08255b;
+  border-radius: 0;
+  color: #08255b;
+  font-size: 16px;
+  padding-left: 10px;
+  transition: width 0.5s ease-in-out, border-radius 0.4s ease-in-out;
+}
+
+.searchButton {
   display: flex;
-  flex-flow: column wrap;
-  align-items: flex-start;
-  min-width: 33vw;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: none;
+  border: 0;
+  margin-left: -2%;
+  color: #08255b;
+  transition: 0.2s ease-in-out;
+  transform: translate(-100%);
 }
 
 /* SEARCH RESULTS OF FIND ART BAR */
 
 .searchResults {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+  align-items: center;
   padding: 4px;
 }
 
@@ -148,8 +151,8 @@ form {
   transition: all 0.2s ease-in-out;
 }
 .grow:hover {
-    transform: scale(1.1);
-  }
+  transform: scale(1.1);
+}
 
 .text {
   font-size: 1rem;
@@ -216,8 +219,10 @@ footer {
   flex: 1;
 }
 
-footer a {
+footer a,
+a:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -229,7 +234,32 @@ h5 {
   margin: 0;
   border-bottom: 2px solid #06193e;
 }
+
+/* MEDIA QUERYS */
+
 @media screen and (max-width: 768px) {
+  .mainView {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    flex-grow: 1;
+  }
+  .side {
+    min-width: 100%;
+  }
+  .sideHeading {
+    margin: 10px;
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    font-size: 30px;
+    width: 100vw
+  }
+  .searchResults {
+    justify-items: center;
+  }
   footer {
     position: static;
   }
