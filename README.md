@@ -1,7 +1,7 @@
 <p align="center">
 <img src="https://github.com/laurakelly1/wall-art-app/blob/main/images/websiteHeading.png" />
 </p>
-There are currently no artworks hanging in my home! Along with the commitment issues I have, I struggled to imagine the chosen artwork bringing my living room alive. Enter: Still Wall.
+There are currently no artworks hanging in my home! Along with the interior design commitment issues I have, I struggled to imagine the chosen artwork bringing my living room alive. Enter: Still Wall.
 <br>
 <br>
 This website allows users to search through the Art Institute of Chicago's database and see their chosen image displayed on a mockup of a wall at home. It makes choosing easy!
