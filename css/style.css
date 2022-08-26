@@ -1,3 +1,5 @@
+/* Make a scroll container for the search results so that you can always see them next to room. */
+/* Make a infinite scroll using pagenation of the search results. */
 
 /* PAGE STRUCTURE */
 
@@ -140,8 +142,9 @@ form {
 .searchResults {
   display: flex;
   flex-flow: row wrap;
-  
+  height: 100vh;
   padding: 4px;
+  overflow: auto;
 }
 
 .imageItem {
