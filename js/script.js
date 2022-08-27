@@ -2,7 +2,6 @@
 const dataURL = "https://api.artic.edu/api/v1/artworks/";
 const search = "search?q=";
 const publicDomain = "&query[term][is_public_domain]=true";
-
 const imageURL = "https://www.artic.edu/iiif/2/";
 const imageSize = "/full/800,/0/default.jpg";
 
@@ -11,19 +10,16 @@ const $title = $(".title"); // 'title'
 const $artist = $(".artist"); // 'artist_titles'
 const $type = $(".type"); // "classification_titles"
 const $year = $(".year"); // 'date_start"
-
 const $form = $("form");
 const $input = $('input[type="text"]');
-
 const $loadImage = $(".info, .imageItem");
-
 const $button = $("button");
 
 // EVENT LISTENERS
 
 $form.on("submit", handleGetData);
 $loadImage.on("click", ".imageItem", showImage);
-$button.on('click', searchBar);
+$button.on("click", searchBar);
 
 // FUNCTIONS
 
@@ -40,7 +36,6 @@ function handleGetData(event) {
     function (artSearch) {
       artSearch.data.forEach(function (artItem) {
         $.ajax(dataURL + artItem.id).then(function (artPiece) {
-          
           // Conditions of poor results.
           if (artPiece.data.image_id == null) return true;
           if (artPiece.data.title == "") return true;
@@ -67,7 +62,8 @@ function handleGetData(event) {
           );
           $(".info").append(
             `<p class="text artist">Artist: ${artPiece.data.artist_titles.join(
-              ", ")}<br></p>`
+              ", "
+            )}<br></p>`
           );
           $(".info").append(
             `<p class="text type">Type: ${artPiece.data.classification_titles.join(
@@ -80,7 +76,6 @@ function handleGetData(event) {
         });
       });
     },
-
     function (error) {
       console.log("there is an error");
       console.log(error);
@@ -91,17 +86,13 @@ function handleGetData(event) {
 function showImage(event) {
   // Clears previous art displayed.
   $(".artAPI").empty();
-
   // Clones and removes css form original
   const newImage = event.target.cloneNode(true);
   newImage.classList.remove("imageItem", "growImage");
-
   // Adds CSS for artwork display and puts it in the frame.
   newImage.classList.add("artAPI");
-
   $(".artAPI").append($(newImage).hide().fadeIn(500));
 }
-
 
 function searchBar() {
   $(".textBox").toggleClass("textBoxLong");
