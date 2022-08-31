@@ -28,7 +28,6 @@ function handleGetData(event) {
   event.preventDefault();
   $(".info").empty();
   $(".image").empty();
-
   // Take user input and put it into the API
   const userInput = $input.val();
   $.ajax(dataURL + search + userInput + publicDomain).then(
