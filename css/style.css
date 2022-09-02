@@ -9,7 +9,6 @@ body {
   flex-flow: column wrap;
   font-family: "Libre Baskerville", serif;
   margin: 0;
-  padding: 0 0 80px 0;
   min-height: 100vh;
 }
 .mainView {
@@ -17,7 +16,6 @@ body {
   display: flex;
   align-content: center;
   gap: 10px;
-  width: 50vw;
 }
 
 div.display {
@@ -178,8 +176,6 @@ form {
 .room {
   display: flex;
   background-color: rgb(255, 255, 255);
-  width: 90%;
-  height: auto;
   border: 20px solid #08255b;
   border-radius: 10px;
   margin: 0 auto;
@@ -217,11 +213,9 @@ form {
 /* FOOTER */
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  padding-top: 0;
+  background-color: #7180ac;
   width: 100vw;
-  height: 90px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -229,9 +223,6 @@ footer {
   background-color: #aec4ee;
   line-height: 2em;
   list-style: none;
-  align-content: flex-end;
-  flex: 1;
-  padding: 0.5%;
 }
 
 footer a,
